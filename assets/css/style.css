@@ -1,0 +1,38 @@
+:root {
+    background: rgb(29, 35, 49);
+
+    /*Colors*/
+    --clr-red: rgb(218, 39, 39);
+    --clr-orange: rgb(245, 145, 30);
+    --clr-yellow: rgb(255, 251, 26);
+    --clr-green: rgb(37, 245, 30);
+    --clr-blue: rgb(12, 97, 255);
+    --clr-purple: rgb(168, 2, 154);
+    --clr-pink: rgb(255, 192, 203);
+    --clr-light: rgb(235, 235, 235);
+    --clr-dark: rgb(27, 27, 27);
+
+    /* Background Colors*/
+    --bg-red: rgb(218, 39, 39);
+    --bg-orange: rgb(245, 145, 30);
+    --bg-yellow: rgb(255, 251, 26);
+    --bg-green: rgb(37, 245, 30);
+    --bg-blue: rgb(12, 97, 255);
+    --bg-purple: rgb(168, 2, 154);
+    --bg-pink: rgb(255, 192, 203);
+    --bg-light: rgb(235, 235, 235);
+    --bg-dark: rgb(27, 27, 27);
+
+}
+
+/*Default Settings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-red {
+    color: var(--clr-red);
+}
