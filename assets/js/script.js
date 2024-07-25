@@ -50,3 +50,26 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
+// JavaScript to add .scrollable class based on media query
+const nav = document.getElementById('navigation');
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+function handleMediaQuery(e) {
+  if (e.matches) {
+    nav.classList.remove('scrollable');
+    navMenu.style.display = 'flex';
+    navCard.style.height = '50px';
+  } else {
+    nav.classList.add('scrollable');
+    navMenu.style.display = 'none';
+    toggleIcon.setAttribute('name', 'menu-outline');
+    isExpanded = false;
+  }
+}
+
+// Initial check on page load
+handleMediaQuery(mediaQuery);
+
+// Listen for changes in media query
+mediaQuery.addListener(handleMediaQuery);

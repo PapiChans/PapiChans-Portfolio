@@ -19,3 +19,8 @@
 - July 24, 2024
 - Add Responsive Navigation Bar
 - Add Basic Responsive Page for Main
+
+**v0.3.1**
+- July 25, 2024
+- Responsive for Basic Page: Complete
+- Add JS Codes for More responsive navigation bar

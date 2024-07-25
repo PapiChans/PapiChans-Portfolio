@@ -453,3 +453,43 @@ display: block;
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 550px) {
+
+    /*Navigation*/
+    .nav-card{
+        left: calc(2% + 23px);
+        right: calc(2% + 23px);
+    }
+
+
+    /*Side Card*/
+
+    .side-card{
+        width: 100%;
+        display: flex;
+        min-height: 100px;
+        padding-top: 1.5rem;
+    }
+
+    .side-container{
+        display: block;
+    }
+    
+    .side-profile{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .side-icon-list {
+        width: 100%;
+    }
+
+    .side-icon-list-item {
+        text-align: start;
+    }
+
+    .side-icon-box{
+        margin-right: 15px;
+    }
+}
