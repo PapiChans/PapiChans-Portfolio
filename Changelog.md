@@ -24,3 +24,8 @@
 - July 25, 2024
 - Responsive for Basic Page: Complete
 - Add JS Codes for More responsive navigation bar
+
+**v0.4.0**
+- July 29, 2024
+- Add Contact Section
+- Add Last Updated Text for Identify how the Portfolio Updates
