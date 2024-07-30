@@ -29,3 +29,10 @@
 - July 29, 2024
 - Add Contact Section
 - Add Last Updated Text for Identify how the Portfolio Updates
+
+**v0.5.0**
+- July 29, 2024
+- Remove "Tech-Stacks" Tab
+- Add Overview and Education Section
+- Adjust NavBar
+- Styling Minor Changes

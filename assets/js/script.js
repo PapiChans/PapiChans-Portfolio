@@ -13,7 +13,7 @@ toggleButton.addEventListener('click', function() {
 
     // Set the height based on the state
     navCard.style.transition = 'height 0.3s ease'; // Smooth transition
-    navCard.style.height = isExpanded ? '300px' : '50px';
+    navCard.style.height = isExpanded ? '250px' : '50px';
     navCard.style.overflowY = isExpanded ? 'scroll' : 'hidden';
     navMenu.style.display = isExpanded ? 'flex' : 'none';
 
