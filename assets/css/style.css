@@ -397,7 +397,7 @@ display: block;
     background: var(--side-card-item-bg);
     min-height: 50px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     border-radius: 5px;
     border: 1px solid var(--card-border);
     transition: ease-in-out 0.3s;
@@ -407,6 +407,38 @@ display: block;
 .list-cards-item:hover{
     box-shadow: var(--card-shadow);
     transition: ease-in-out 0.3s;
+}
+
+.list-cards-item-image{
+    display: flex;
+    background: var(--side-card-item-bg);
+    min-height: 50px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--card-border);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.list-cards-item-image:hover{
+    box-shadow: var(--card-shadow);
+    transition: ease-in-out 0.3s;
+}
+
+.list-cards-text{
+    width: 60%;
+}
+
+.list-cards-image{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-cards-pic {
+    width: 150px;
 }
 
 /* ---------------------- Responsive Area ---------------------- */
@@ -584,4 +616,21 @@ display: block;
     .side-icon-box{
         margin-right: 15px;
     }
+
+    /*List Cards*/
+    .list-cards-item-image{
+        display: block;
+    }
+    
+    .list-cards-text{
+        width: 100%;
+    }
+    
+    .list-cards-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

@@ -31,8 +31,16 @@
 - Add Last Updated Text for Identify how the Portfolio Updates
 
 **v0.5.0**
-- July 29, 2024
+- July 30, 2024
 - Remove "Tech-Stacks" Tab
 - Add Overview and Education Section
 - Adjust NavBar
 - Styling Minor Changes
+
+**v1.0.0**
+- July 30, 2024
+- Styling Minor Changes
+- Add Experience and Projects Section
+- Grammar Correction
+- Add Logos in Assets
+- **At this point it is ready to deploy**
