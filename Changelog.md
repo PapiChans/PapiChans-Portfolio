@@ -44,3 +44,7 @@
 - Grammar Correction
 - Add Logos in Assets
 - **At this point it is ready to deploy**
+
+**v1.1.0**
+- October 4, 2024
+- Add Roshidere-Homepage in Project Section
