@@ -48,3 +48,8 @@
 **v1.1.0**
 - October 4, 2024
 - Add Roshidere-Homepage in Project Section
+
+**v1.1.1**
+- October 7, 2024
+- Update the Last Updated
+- Add Hyperlink for Roshidere
