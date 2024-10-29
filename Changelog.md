@@ -53,3 +53,10 @@
 - October 7, 2024
 - Update the Last Updated
 - Add Hyperlink for Roshidere
+
+**v1.2.0**
+- October 29, 2024
+- Update the Last Updated
+- Adjust Contact Box
+- Changed the Profile Pic to Graduate Pic
+- Some HTML Adjustments

@@ -240,6 +240,7 @@ main {
     align-items: center;
     justify-content: center;
     justify-items: center;
+    overflow-x: hidden;
 }
 
 .main-icon-list-item {
