@@ -60,3 +60,7 @@
 - Adjust Contact Box
 - Changed the Profile Pic to Graduate Pic
 - Some HTML Adjustments
+
+**v1.2.1**
+- October 30, 2024
+- BUG FIX: Container Maximizing Width

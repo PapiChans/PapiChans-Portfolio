@@ -195,6 +195,7 @@ main {
     cursor: pointer;
     transition: ease-in-out 0.3s;
     margin: 10px;
+    min-width: 100%;
 }
 
 .side-icon-list-item:hover{
@@ -237,9 +238,6 @@ main {
 
 .main-icon-list {
     display: block;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
     overflow-x: hidden;
 }
 
@@ -253,7 +251,7 @@ main {
     cursor: pointer;
     transition: ease-in-out 0.3s;
     margin: 10px;
-    width: 100%;
+    min-width: 100%;
 }
 
 .main-icon-list-item:hover{
