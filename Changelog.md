@@ -64,3 +64,7 @@
 **v1.2.1**
 - October 30, 2024
 - BUG FIX: Container Maximizing Width
+
+**v1.3.0**
+- November 25, 2024
+- Add Finished Project in Project Section
