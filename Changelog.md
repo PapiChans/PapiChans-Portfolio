@@ -68,3 +68,7 @@
 **v1.3.0**
 - November 25, 2024
 - Add Finished Project in Project Section
+
+**v1.4.0**
+- December 16, 2024
+- Add Two Projects in Projects Section
