@@ -72,3 +72,7 @@
 **v1.4.0**
 - December 16, 2024
 - Add Two Projects in Projects Section
+
+**v1.5.0**
+- Janruary 5, 2024
+- Add New Project in Projects Section
