@@ -1,5 +1,18 @@
 // Navbar Responsive
 
+// Create an instance of Notyf
+var notyf = new Notyf();
+
+// Display an error notification
+notyf.open({
+  message: 'Notice! This user is currently upgrading this Portfolio as of Jan 25, 2025',
+  duration: 0,
+  icon: false,
+  background: '#42c972',
+  dismissible: true,
+  position: {x:'right', y:'top'},
+})
+
 const toggleButton = document.querySelector('.nav-button');
 const navCard = document.querySelector('.nav-card');
 const navMenu = document.querySelector('.nav-ul');

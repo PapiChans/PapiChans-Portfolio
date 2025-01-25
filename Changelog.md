@@ -74,5 +74,10 @@
 - Add Two Projects in Projects Section
 
 **v1.5.0**
-- Janruary 5, 2024
+- January 5, 2025
 - Add New Project in Projects Section
+
+**v1.6.0**
+- January 25, 2025
+- Add Notyf as Notice
+- **STARTING PROJECT: Portfolio 2.0**

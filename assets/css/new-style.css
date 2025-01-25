@@ -1,0 +1,118 @@
+/*© Christian Altiche, 2025*/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 0;
+}
+
+:root {
+    /*Colors*/
+    --clr-red: rgb(218, 39, 39);
+    --clr-orange: rgb(245, 145, 30);
+    --clr-yellow: rgb(255, 251, 26);
+    --clr-green: rgb(37, 245, 30);
+    --clr-blue: rgb(12, 97, 255);
+    --clr-light-blue: rgb(151, 188, 255);
+    --clr-purple: rgb(168, 2, 154);
+    --clr-pink: rgb(255, 192, 203);
+    --clr-light: rgb(235, 235, 235);
+    --clr-dark: rgb(59, 59, 59);
+    --clr-gray: rgb(201, 201, 201);
+
+    /*Shadow*/
+    --card-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+}
+
+/*Typography*/
+
+h1{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+p{
+    font-size: 10px;
+}
+
+.fw-normal {
+    font-weight: 300;
+}
+
+.fw-semibold {
+    font-weight: 400;
+}
+
+.fw-bold {
+    font-weight: 500;
+}
+
+.fw-extrabold {
+    font-weight: 700;
+}
+
+.text-light {
+    color: var(--clr-light);
+}
+
+
+
+/* Navigation Bar */
+.navbar{
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-dark);
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    padding: 10px;
+    box-shadow: var(--card-shadow);
+}
+
+.navbar-logo-box {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-logo {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.navbar-content {
+    width: 80%;
+    display: flex;
+}
+
+.navbar-list-area {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    justify-content: end;
+}
+
+.navbar-ul {
+    display: flex;
+}
+
+.navbar-li {
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
