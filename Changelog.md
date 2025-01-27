@@ -81,3 +81,8 @@
 - January 25, 2025
 - Add Notyf as Notice
 - **STARTING PROJECT: Portfolio 2.0**
+
+**v1.6.1**
+- January 27, 2025
+- Add Select Theme Feature
+- Front End Adjustments

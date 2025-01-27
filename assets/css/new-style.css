@@ -10,9 +10,61 @@
 
 body {
     padding: 0;
+    background-color: var(--theme-bg);
+    color: var(--theme-color);
+    transition: background-color 0.5s ease, color 0.5s ease,;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+    --theme-bg: rgb(226, 226, 226);
+    --theme-card-bg: rgb(189, 189, 189);
+    --theme-color: rgb(34, 34, 34);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --theme-bg: rgb(48, 48, 48);
+    --theme-card-bg: rgb(36, 36, 36);
+    --theme-color: rgb(226, 226, 226);
+
+}
+
+/* Color Palette */
+[data-color="red"] { 
+    --pallete-clr: rgb(218, 39, 39); /* Red */
+}
+
+[data-color="orange"] { 
+    --pallete-clr: rgb(245, 145, 30); /* Orange */
+}
+
+[data-color="yellow"] { 
+    --pallete-clr: rgb(255, 251, 26); /* Yellow */
+}
+
+[data-color="green"] { 
+    --pallete-clr: rgb(37, 245, 30); /* Green */
+}
+
+[data-color="blue"] { 
+    --pallete-clr: rgb(12, 97, 255); /* Blue */
+}
+
+[data-color="light-blue"] { 
+    --pallete-clr: rgb(151, 188, 255); /* Light Blue */
+}
+
+[data-color="purple"] { 
+    --pallete-clr: rgb(168, 2, 154); /* Purple */
+}
+
+[data-color="pink"] { 
+    --pallete-clr: rgb(255, 192, 203); /* Pink */
 }
 
 :root {
+
     /*Colors*/
     --clr-red: rgb(218, 39, 39);
     --clr-orange: rgb(245, 145, 30);
@@ -68,18 +120,26 @@ p{
 
 /* Navigation Bar */
 .navbar{
-    z-index: 999;
+    z-index: 2;
     display: flex;
     align-items: center;
-    background-color: var(--clr-dark);
+    background-color: var(--theme-card-bg);
     width: 100%;
     height: 65px;
     position: fixed;
     padding: 10px;
     box-shadow: var(--card-shadow);
+    transition: background-color 0.3s ease;
 }
 
 .navbar-logo-box {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-button-area {
     display: flex;
     width: 10%;
     align-items: center;
@@ -99,8 +159,9 @@ p{
 .navbar-list-area {
     display: flex;
     height: 100%;
-    width: 90%;
+    width: 100%;
     justify-content: end;
+    padding-right: 30px;
 }
 
 .navbar-ul {
@@ -112,7 +173,62 @@ p{
     cursor: pointer;
     font-weight: 500;
     letter-spacing: 0.7px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     font-size: 16px;
+    color: var(--theme-color)
 }
+
+/* Theme Settings*/
+
+.theme-settings {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 80px;
+}
+
+.theme-menus {
+    display: block;
+    cursor: pointer;
+}
+
+.theme-area {
+    z-index: 99;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--theme-card-bg);
+    background-color: var(--theme-card-bg);
+    margin-right: 25px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.moon-icon {
+    display: none;
+}
+
+.sun-icon {
+    display: block;
+}
+
+.theme-menu {
+    display: block;
+    width: 50px;
+    height: 200px;
+    background-color: var(--theme-card-bg);
+    border: 5px solid var(--theme-card-bg);
+    border-radius: 5px;
+
+}
+
+/*
+-----------------------------
+The Responsive Area
+----------------------------- 
+*/

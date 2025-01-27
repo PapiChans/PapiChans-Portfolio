@@ -5,7 +5,7 @@ var notyf = new Notyf();
 
 // Display an error notification
 notyf.open({
-  message: 'Notice! This user is currently upgrading this Portfolio as of Jan 25, 2025',
+  message: 'Notice! This portfolio is currently upgrading by the owner as of Jan 25, 2025',
   duration: 0,
   icon: false,
   background: '#42c972',
