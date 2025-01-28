@@ -15,40 +15,72 @@
 <body>
     <!-- Navigation Bar Start -->
     <nav class="navbar">
-        <div class="navbar-logo-box">
-            <img src="assets/images/logo.png" alt="PapiChans Logo" class="navbar-logo" />
-        </div>
-        <div class="navbar-button-area">
-            <ion-icon name="menu-outline" size="large"></ion-icon>
-            <ion-icon name="close-outline" size="large"></ion-icon>
+        <div class="navbar-remain">
+            <div class="navbar-logo-box">
+                <img src="assets/images/logo.png" alt="PapiChans Logo" class="navbar-logo" />
+            </div>
+            <div class="navbar-button-area">
+                <ion-icon class="open-navbar" name="menu-outline" size="large"></ion-icon>
+                <ion-icon class="close-navbar" name="close-outline" size="large"></ion-icon>
+            </div>
         </div>
         <div class="navbar-content">
             <div class="navbar-list-area">
                 <ul class="navbar-ul">
-                    <li class="navbar-li">Profile</li>
-                    <li class="navbar-li">Experiences</li>
-                    <li class="navbar-li">Skills</li>
-                    <li class="navbar-li">Projects</li>
-                    <li class="navbar-li">Blog</li>
+                    <li class="navbar-li active" data-tab-target="#profile-section">Profile</li>
+                    <li class="navbar-li" data-tab-target="#experiences-section">Experiences</li>
+                    <li class="navbar-li" data-tab-target="#skills-section">Skills</li>
+                    <li class="navbar-li" data-tab-target="#projects-section">Projects</li>
+                    <li class="navbar-li" data-tab-target="#blog-section">Blog</li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Navigation Bar End -->
-     <div class="theme-settings">
+    <!-- Theme Settings Start -->
+    <div class="theme-settings">
         <div class="theme-menus">
             <div data-theme-toggle class="theme-area">
-                <ion-icon class="moon-icon" name="moon-outline" size="small"></ion-icon>
-                <ion-icon class="sun-icon" name="sunny-outline" size="small"></ion-icon>
-            </div>
-            <div class="theme-area">
-                <ion-icon name="color-palette-outline" size="small"></ion-icon>
-            </div>
-            <div class="theme-menu" id="color-palette-menu">
-
-            </div>
+            <ion-icon class="moon-icon" name="moon-outline" size="small"></ion-icon>
+            <ion-icon class="sun-icon" name="sunny-outline" size="small"></ion-icon>
         </div>
-     </div>
+        <div class="theme-area" id="color-pallete-button">
+            <ion-icon name="color-palette-outline" size="small"></ion-icon>
+        </div>
+        <div class="theme-pallete-menu">
+            <div class="color-choice" data-color="red"></div>
+            <div class="color-choice" data-color="orange"></div>
+            <div class="color-choice" data-color="yellow"></div>
+            <div class="color-choice" data-color="green"></div>
+            <div class="color-choice" data-color="blue"></div>
+            <div class="color-choice" data-color="light-blue"></div>
+            <div class="color-choice" data-color="purple"></div>
+            <div class="color-choice" data-color="pink"></div>
+        </div>
+    </div>
+    </div>
+    <!-- Theme Settings End -->
+    <!-- Main Contents Start -->
+    <div class="main-body">
+        <div class="card">
+            <section class="card-content active" id="profile-section" data-tab-content>
+                <h1>Profile</h1>
+            </section>
+            <section class="card-content" id="experiences-section" data-tab-content>
+                <h1>experiences</h1>
+            </section>
+            <section class="card-content" id="skills-section" data-tab-content>
+                <h1>skills</h1>
+            </section>
+            <section class="card-content" id="projects-section" data-tab-content>
+                <h1>projects</h1>
+            </section>
+            <section class="card-content" id="blog-section" data-tab-content>
+                <h1>blog</h1>
+            </section>
+        </div>
+    </div>
+    <!-- Main Contents End -->
 </body>
     <script src="assets/js/new-script.js"></script>
 </html>

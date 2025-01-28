@@ -86,3 +86,9 @@
 - January 27, 2025
 - Add Select Theme Feature
 - Front End Adjustments
+
+**v1.6.2**
+- January 28, 2025
+- Add NavBar Feature
+- Add Tabs Feature
+- Front End Adjustments

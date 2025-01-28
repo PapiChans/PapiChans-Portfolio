@@ -18,8 +18,9 @@ body {
 /* Light Theme */
 [data-theme="light"] {
     --theme-bg: rgb(226, 226, 226);
-    --theme-card-bg: rgb(189, 189, 189);
-    --theme-color: rgb(34, 34, 34);
+    --theme-card-bg: rgb(231, 231, 231);
+    --theme-color: rgb(54, 54, 54);
+    --theme-color-hover: rgb(219, 219, 219);
 }
 
 /* Dark Theme */
@@ -27,12 +28,13 @@ body {
     --theme-bg: rgb(48, 48, 48);
     --theme-card-bg: rgb(36, 36, 36);
     --theme-color: rgb(226, 226, 226);
+    --theme-color-hover: rgb(46, 46, 46);
 
 }
 
 /* Color Palette */
 [data-color="red"] { 
-    --pallete-clr: rgb(218, 39, 39); /* Red */
+    --pallete-clr: rgb(255, 58, 58); /* Red */
 }
 
 [data-color="orange"] { 
@@ -66,20 +68,17 @@ body {
 :root {
 
     /*Colors*/
-    --clr-red: rgb(218, 39, 39);
-    --clr-orange: rgb(245, 145, 30);
-    --clr-yellow: rgb(255, 251, 26);
-    --clr-green: rgb(37, 245, 30);
-    --clr-blue: rgb(12, 97, 255);
-    --clr-light-blue: rgb(151, 188, 255);
-    --clr-purple: rgb(168, 2, 154);
-    --clr-pink: rgb(255, 192, 203);
-    --clr-light: rgb(235, 235, 235);
-    --clr-dark: rgb(59, 59, 59);
-    --clr-gray: rgb(201, 201, 201);
+    --pallete-clr-red: rgb(255, 58, 58);
+    --pallete-clr-orange: rgb(245, 145, 30);
+    --pallete-clr-yellow: rgb(255, 251, 26);
+    --pallete-clr-green: rgb(37, 245, 30);
+    --pallete-clr-blue: rgb(12, 97, 255);
+    --pallete-clr-light-blue: rgb(151, 188, 255);
+    --pallete-clr-purple: rgb(168, 2, 154);
+    --pallete-clr-pink: rgb(255, 192, 203);
 
     /*Shadow*/
-    --card-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    --card-shadow: -4px 8px 24px hsla(0, 0%, 23%, 0.466);
 }
 
 /*Typography*/
@@ -120,7 +119,7 @@ p{
 
 /* Navigation Bar */
 .navbar{
-    z-index: 2;
+    z-index: 4;
     display: flex;
     align-items: center;
     background-color: var(--theme-card-bg);
@@ -130,18 +129,24 @@ p{
     padding: 10px;
     box-shadow: var(--card-shadow);
     transition: background-color 0.3s ease;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-remain {
+    display: flex;
+    width: 30%;
 }
 
 .navbar-logo-box {
     display: flex;
-    width: 10%;
     align-items: center;
     justify-content: center;
+    padding-left: 25px;
+    cursor: pointer;
 }
 
 .navbar-button-area {
-    display: flex;
-    width: 10%;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -151,8 +156,12 @@ p{
     max-width: 40px;
 }
 
+.open-navbar {
+    display: none;
+}
+
 .navbar-content {
-    width: 80%;
+    width: 70%;
     display: flex;
 }
 
@@ -176,7 +185,16 @@ p{
     margin-left: 15px;
     margin-right: 15px;
     font-size: 16px;
-    color: var(--theme-color)
+    color: var(--theme-color);
+    transition: 0.1s ease-in-out;
+}
+
+.navbar-li:hover {
+    color: var(--pallete-clr)
+}
+
+.navbar-li.active {
+    color: var(--pallete-clr);
 }
 
 /* Theme Settings*/
@@ -202,11 +220,17 @@ p{
     height: 50px;
     align-items: center;
     justify-content: center;
-    border: 5px solid var(--theme-card-bg);
+    border: 2px solid var(--pallete-clr);
     background-color: var(--theme-card-bg);
     margin-right: 25px;
     border-radius: 30px;
     margin-bottom: 10px;
+    transition: 0.2s ease-in-out;
+    box-shadow: var(--card-shadow);
+}
+
+.theme-area:hover {
+    background-color: var(--theme-color-hover);
 }
 
 .moon-icon {
@@ -217,18 +241,166 @@ p{
     display: block;
 }
 
-.theme-menu {
+.theme-pallete-menu {
     display: block;
     width: 50px;
-    height: 200px;
+    height: 325px;
     background-color: var(--theme-card-bg);
     border: 5px solid var(--theme-card-bg);
-    border-radius: 5px;
-
+    border-radius: 3px;
+    padding: 2px;
+    box-shadow: var(--card-shadow);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
 }
+
+.theme-pallete-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0s 0s;
+}
+
+.color-choice {
+    width: 100%;
+    height: 30px;
+    transition: 0.1s ease-in-out;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: var(--pallete-clr);
+}
+
+.color-choice:hover {
+    border: 2px solid var(--theme-color);
+}
+
+/* Main Contents */
+.main-body {
+    display: block;
+    height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    background-image: url('../../assets/images/background/white-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.card {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme-card-bg);
+    border: 4px solid var(--pallete-clr);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.card-content {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card-content.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /*
 -----------------------------
 The Responsive Area
 ----------------------------- 
 */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        display: block;
+        overflow-y: hidden;
+    }
+    
+    .navbar-remain {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 3px;
+    }
+    .navbar-logo-box {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 50%;
+    }
+
+    .navbar-button-area {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 25px;
+        width: 50%;
+    }
+
+    .navbar-content {
+        display: block;
+        margin-top: 20px;
+        width: 25%;
+    }
+
+    .open-navbar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .close-navbar {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .open-navbar:hover, .close-navbar:hover {
+        color: var(--pallete-clr);
+    }
+
+    .navbar-list-area {
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .navbar-ul {
+        display: block;
+    }
+
+    .navbar-li {
+        margin: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}
