@@ -50,7 +50,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Toggle the Color Palette Menu
     colorMenuButton.addEventListener('click', () => {
         // Toggle display between show and hide
-        colorMenu.classList.toggle('show');
+        if (colorMenu.style.display == 'block') {
+            colorMenu.classList.toggle('show');
+            setTimeout(() => {
+                colorMenu.style.display = 'none';
+            },200);
+        }
+        else {
+            colorMenu.style.display = 'block'
+            setTimeout(() => {
+                colorMenu.classList.toggle('show');
+            },50);
+        }
     });
 
     // Using Loop, to finds the clicked color
@@ -64,6 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // hides the Color Menu
             colorMenu.classList.toggle('show');
+            setTimeout(() => {
+                colorMenu.style.display = 'none';
+            },200);
         });
     });
 
@@ -74,6 +88,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get the icons
     const navbarToggleIcon1 = document.querySelector('.open-navbar');
     const navbarToggleIcon2 = document.querySelector('.close-navbar');
+
+    // Get Overlay
+    const overlay = document.querySelector('.overlay');
 
     // Get the Div for the icon
     const menuDiv = document.querySelector('.navbar-button-area');
@@ -92,11 +109,13 @@ document.addEventListener('DOMContentLoaded', function() {
             navBarExtended = true;
             navBar.style.height = '280px';
             iconTransition (navbarToggleIcon1, navbarToggleIcon2);
+            overlay.style.display ='block';
         }
         else {
             navBarExtended = false;
             navBar.style.height = '65px';
             iconTransition (navbarToggleIcon2, navbarToggleIcon1);
+            overlay.style.display ='none';
         }
     })
 
@@ -126,6 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navBarExtended = false
         iconTransition (navbarToggleIcon2, navbarToggleIcon1);
         navBar.style.height = '65px';
+        overlay.style.display = 'none';
     });
 
     // Getting the Tabs
@@ -148,6 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 navBar.style.height = '65px';
                 navBarExtended = false;
                 iconTransition(navbarToggleIcon2, navbarToggleIcon1);
+                overlay.style.display ='none';
             });
 
             target.style.display = 'block';

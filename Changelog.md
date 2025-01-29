@@ -92,3 +92,9 @@
 - Add NavBar Feature
 - Add Tabs Feature
 - Front End Adjustments
+
+**v1.6.3**
+- January 28, 2025
+- Add Overlay when tab is activated
+- Add Profile Intro and it's responsiveness
+- Deleted White Background Pic due to it's unused and incompatible

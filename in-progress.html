@@ -13,6 +13,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+    <div class="overlay"></div>
     <!-- Navigation Bar Start -->
     <nav class="navbar">
         <div class="navbar-remain">
@@ -41,30 +42,50 @@
     <div class="theme-settings">
         <div class="theme-menus">
             <div data-theme-toggle class="theme-area">
-            <ion-icon class="moon-icon" name="moon-outline" size="small"></ion-icon>
-            <ion-icon class="sun-icon" name="sunny-outline" size="small"></ion-icon>
+                <ion-icon class="moon-icon" name="moon-outline" size="small"></ion-icon>
+                <ion-icon class="sun-icon" name="sunny-outline" size="small"></ion-icon>
+            </div>
+            <div class="theme-area" id="color-pallete-button">
+                <ion-icon name="color-palette-outline" size="small"></ion-icon>
+            </div>
+            <div class="theme-pallete-menu">
+                <div class="color-choice" data-color="red"></div>
+                <div class="color-choice" data-color="orange"></div>
+                <div class="color-choice" data-color="yellow"></div>
+                <div class="color-choice" data-color="green"></div>
+                <div class="color-choice" data-color="blue"></div>
+                <div class="color-choice" data-color="light-blue"></div>
+                <div class="color-choice" data-color="purple"></div>
+                <div class="color-choice" data-color="pink"></div>
+            </div>
         </div>
-        <div class="theme-area" id="color-pallete-button">
-            <ion-icon name="color-palette-outline" size="small"></ion-icon>
-        </div>
-        <div class="theme-pallete-menu">
-            <div class="color-choice" data-color="red"></div>
-            <div class="color-choice" data-color="orange"></div>
-            <div class="color-choice" data-color="yellow"></div>
-            <div class="color-choice" data-color="green"></div>
-            <div class="color-choice" data-color="blue"></div>
-            <div class="color-choice" data-color="light-blue"></div>
-            <div class="color-choice" data-color="purple"></div>
-            <div class="color-choice" data-color="pink"></div>
-        </div>
-    </div>
     </div>
     <!-- Theme Settings End -->
     <!-- Main Contents Start -->
     <div class="main-body">
         <div class="card">
             <section class="card-content active" id="profile-section" data-tab-content>
-                <h1>Profile</h1>
+                <h1 class="card-header-text">Profile Overview</h1>
+                <div class="card-profile-intro">
+                    <div class="profile-picture-section">
+                        <img src="/PapiChans-Portfolio/assets/images/gradpic.jpg" alt="Profile Picture" class="profile-picture">
+                    </div>
+                    <div class="profile-text-area">
+                        <div class="profile-flex">
+                            <h1 class="profile-name">Christian A. Altiche</h1>
+                        </div>
+                        <div class="profile-flex">
+                            <p class="card-subheader-text">Web Developer</p>
+                        </div>
+                        <p class="profile-paragraph">I'm Christian...Graduated Student from Polytechnic University of the Philippines - Quezon City Campus from the course of Bachelor of Science in Information Technology. Graduated exactly October 18, 2024.</p>
+                        <div class="profile-contacts">
+                            <div class="contact-box"><ion-icon name="logo-linkedin" size="large"></ion-icon></div>
+                            <div class="contact-box"><ion-icon name="logo-github" size="large"></ion-icon></div>
+                            <div class="contact-box"><ion-icon name="mail-outline" size="large"></ion-icon></div>
+                            <div class="contact-box"><ion-icon name="call-outline" size="large"></ion-icon></div>
+                        </div>
+                    </div>
+                </di>
             </section>
             <section class="card-content" id="experiences-section" data-tab-content>
                 <h1>experiences</h1>
