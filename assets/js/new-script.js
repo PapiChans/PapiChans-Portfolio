@@ -180,4 +180,25 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 10);
         });
     });
+
+    // -------------------------------
+    // Library: Tippy JS
+    // -------------------------------
+
+    // Get Phone Number Button and Gmail
+    tippy('#call-button', {
+        content: "+63 929 635 2760",
+        placement: 'bottom',
+        arrow: true,
+        animation: 'fade',
+        duration: 300,
+    });
+
+    tippy('#mail-button', {
+        content: "chris.altiche123@gmail.com",
+        placement: 'bottom',
+        arrow: true,
+        animation: 'fade',
+        duration: 300,
+    });
 });

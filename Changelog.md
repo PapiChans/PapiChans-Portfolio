@@ -98,3 +98,8 @@
 - Add Overlay when tab is activated
 - Add Profile Intro and it's responsiveness
 - Deleted White Background Pic due to it's unused and incompatible
+
+**v1.6.4**
+- January 28, 2025
+- Profile Feature Finished
+- Add AOS Library (Animate on Scroll)

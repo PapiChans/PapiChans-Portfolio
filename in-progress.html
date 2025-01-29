@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="overlay"></div>
@@ -65,8 +66,8 @@
     <div class="main-body">
         <div class="card">
             <section class="card-content active" id="profile-section" data-tab-content>
-                <h1 class="card-header-text">Profile Overview</h1>
-                <div class="card-profile-intro">
+                <h1 data-aos="fade-up" data-aos-duration="1000" class="card-header-text">Profile Overview</h1>
+                <div data-aos="fade-up" data-aos-duration="1000" class="card-profile-intro">
                     <div class="profile-picture-section">
                         <img src="/PapiChans-Portfolio/assets/images/gradpic.jpg" alt="Profile Picture" class="profile-picture">
                     </div>
@@ -77,18 +78,144 @@
                         <div class="profile-flex">
                             <p class="card-subheader-text">Web Developer</p>
                         </div>
-                        <p class="profile-paragraph">I'm Christian...Graduated Student from Polytechnic University of the Philippines - Quezon City Campus from the course of Bachelor of Science in Information Technology. Graduated exactly October 18, 2024.</p>
+                        <p class="card-paragraph">I'm Christian. Graduated Student from Polytechnic University of the Philippines - Quezon City Campus from the course of Bachelor of Science in Information Technology. Graduated exactly October 18, 2024.</p>
                         <div class="profile-contacts">
-                            <div class="contact-box"><ion-icon name="logo-linkedin" size="large"></ion-icon></div>
-                            <div class="contact-box"><ion-icon name="logo-github" size="large"></ion-icon></div>
-                            <div class="contact-box"><ion-icon name="mail-outline" size="large"></ion-icon></div>
-                            <div class="contact-box"><ion-icon name="call-outline" size="large"></ion-icon></div>
+                            <a href="https://ph.linkedin.com/in/christian-altiche-9b8065271" target="..blank">
+                                <div class="contact-box"><ion-icon name="logo-linkedin" size="large"></ion-icon></div>
+                            </a>
+                            <a href="https://github.com/PapiChans" target="..blank">
+                                <div class="contact-box"><ion-icon name="logo-github" size="large"></ion-icon></div>
+                            </a>
+                            <div class="contact-box" id="mail-button"><ion-icon name="mail-outline" size="large"></ion-icon></div>
+                            <div class="contact-box" id="call-button"><ion-icon name="call-outline" size="large"></ion-icon></div>
                         </div>
                     </div>
-                </di>
+                </div>
+                <h1 class="card-header-text">Bio</h1>
+                <p class="card-paragraph">
+                    A Web Developer and IT Enthusiast who's living a simple life and yet it satisfying and doing best to be an IT Professional
+                    someday that I may able to live with a good lifestyle to keep the performance to work more efficient, wanting to balance
+                    self-care and work performance, in other words, work-life balance.
+                </p>
+                <p class="card-paragraph">
+                    Ever since High School, I discovered myself that I'm quite knowledgeable when it comes to Computer so I can easily learn such
+                    as basic troubleshooting, logical reasoning and enhancing skills through observing. This is how I discovered myself and enjoy
+                    to learn to program since then so I decided that I should not waste this skills and knowledge so I decide to pursue this IT field.
+                </p>
+                <h1 class="card-header-text">College Days</h1>
+                <p class="card-paragraph">
+                    During my College days, it enhances my Programming Skills as I try different Programming Languages, Learn Database, Creating
+                    Projects, etc. This considered to myself as a stepping-stone to be able to qualified to be an IT Professional in this field. And
+                    At the time of my Internship, I able to feel a real-work as a Web Developer and gave me an experience and insights to be able
+                    to learn from them and use it for the time that I may working.
+                </p>
+                <h1 class="card-header-text">What I am doing?</h1>
+                <div class="profile-card-area">
+                    <div class="profile-card">
+                        <div class="profile-card-icon-area">
+                            <div class="profile-card-icon">
+                                <ion-icon name="desktop-outline" size="large"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="profile-flex-center">
+                            <h1 class="profile-card-header">Front End Development</h1>
+                        </div>
+                        <p class="card-paragraph">
+                            Designing a Front-End of a Website and not just Developing but applying and considering the UI/UX Principles just like
+                            this my Personal Portfolio. A Boostrap-Inspired Design that I worked.
+                        </p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-card-icon-area">
+                            <div class="profile-card-icon">
+                                <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="profile-flex-center">
+                            <h1 class="profile-card-header">Back End Development</h1>
+                        </div>
+                        <p class="card-paragraph">
+                            I'm actually can be a Full-Stack Developer, However there are some Tools and Things that I need to learn before I able to
+                            become a certified Full-Stack Developer. Get experiences from my Capstone and Other Projects not just a Back-end functions but also Database, Also,
+                            get experiences from my Internship.
+                        </p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-card-icon-area">
+                            <div class="profile-card-icon">
+                                <ion-icon name="pencil-outline" size="large"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="profile-flex-center">
+                            <h1 class="profile-card-header">Wireframing</h1>
+                        </div>
+                        <p class="card-paragraph">
+                            Before I develop a Front-End, I make some Wire Frames to set the design of a Project, applying and considering the UI/UX Principles to have
+                            a direction and meet the goals of the project.
+                        </p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-card-icon-area">
+                            <div class="profile-card-icon">
+                                <ion-icon name="server-outline" size="large"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="profile-flex-center">
+                            <h1 class="profile-card-header">Database Management (Basics)</h1>
+                        </div>
+                        <p class="card-paragraph">
+                            Creating and Managing Database that I experienced in my Capstone Project and Internship, discovering various tools
+                            that commonly used for Database Related Management.
+                        </p>
+                    </div>
+                </div>
+                <h1 class="card-header-text">Other Stuffs</h1>
+                <div class="profile-card-area">
+                    <div class="profile-card">
+                        <div class="profile-card-icon-area">
+                            <div class="profile-card-icon">
+                                <ion-icon name="hammer-outline" size="large"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="profile-flex-center">
+                            <h1 class="profile-card-header">Quality Assurance Testing</h1>
+                        </div>
+                        <p class="card-paragraph">
+                            Have an experience to Test a Website for it's Functionalities during my College days. Taking a QA's Perspective to build a
+                            Project especially Website with consideration of being a QA to make sure everything is working once my work is going to Test.
+                        </p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-card-icon-area">
+                            <div class="profile-card-icon">
+                                <ion-icon name="film-outline" size="large"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="profile-flex-center">
+                            <h1 class="profile-card-header">Media Editing</h1>
+                        </div>
+                        <p class="card-paragraph">
+                            I have a knowledge about Media Editing such as Image, Video and Audio Editing using various tools and softwares that free to
+                            use for my personal hobbies.
+                        </p>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-card-icon-area">
+                            <div class="profile-card-icon">
+                                <ion-icon name="musical-note-outline" size="large"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="profile-flex-center">
+                            <h1 class="profile-card-header">8-Bit Music Composing (Hobby)</h1>
+                        </div>
+                        <p class="card-paragraph">
+                            Just a hobby where I use my free time to compose something whether I have ideas or something in my mind.
+                        </p>
+                    </div>
+                </div>
             </section>
             <section class="card-content" id="experiences-section" data-tab-content>
-                <h1>experiences</h1>
+                <h1 class="card-header-text">Work Experiences</h1>
             </section>
             <section class="card-content" id="skills-section" data-tab-content>
                 <h1>skills</h1>
@@ -104,4 +231,12 @@
     <!-- Main Contents End -->
 </body>
     <script src="assets/js/new-script.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+        disable: false,
+        duration: 800,
+        startEvent: 'DOMContentLoaded',
+    });</script>
 </html>
