@@ -103,3 +103,8 @@
 - January 28, 2025
 - Profile Feature Finished
 - Add AOS Library (Animate on Scroll)
+
+**v1.6.5**
+- January 28, 2025
+- Add Education on Profile Content
+- Add Experiences and Finished

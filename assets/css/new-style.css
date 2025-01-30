@@ -134,6 +134,10 @@ body {
     margin-bottom: 10px;
 }
 
+.fw-bold {
+    font-weight: bold;
+} 
+
 /*Typography: Profile*/
 .profile-name {
     font-size: clamp(17px, 3vw, 100px);
@@ -463,6 +467,79 @@ body {
     margin-bottom: 10px;
 }
 
+.profile-education-area {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+}
+
+.profile-education-box {
+    border: 2px solid var(--pallete-clr);
+    background-color: var(--theme-bg);
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.profile-education-logo-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-height: 100px;
+}
+
+.profile-education-logo {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+}
+
+/* Experiences Section */
+
+.experience-content {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    border-left: 3px solid var(--pallete-clr);
+}
+
+.experience-content-box {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+
+.experience-point {
+    height: 20px;
+    width: 20px;
+    background-color: var(--theme-card-bg);
+    border: 5px solid var(--pallete-clr);
+    border-radius: 50px;
+    margin-left: -16px;
+    margin-top: -2px;
+}
+
+.experience-content-area {
+    display: block;
+    padding-left: 1rem;
+    margin-top: -2.2rem;
+}
+
+.experience-content-list {
+    padding-left: 30px;
+}
+
+.experience-list-li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 /*
 -----------------------------
@@ -550,9 +627,27 @@ The Responsive Area
         padding-right: 1rem;
     }
 
+    .profile-contacts {
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: repeat(3, 3fr);
+        justify-self: center;
+        align-items: center;
+    }
+
     .profile-card-area {
         grid-template-columns: repeat(1, 2fr);
     }
+
+    .profile-education-area {
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
 }
 
 /*Custom Responsive #1*/

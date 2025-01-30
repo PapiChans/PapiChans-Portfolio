@@ -201,4 +201,20 @@ document.addEventListener('DOMContentLoaded', function() {
         animation: 'fade',
         duration: 300,
     });
+
+    tippy('#location-button', {
+        content: "Norzagaray, Bulacan",
+        placement: 'bottom',
+        arrow: true,
+        animation: 'fade',
+        duration: 300,
+    });
+
+    tippy('#time-button', {
+        content: `Last Updated: ` + document.lastModified,
+        placement: 'bottom',
+        arrow: true,
+        animation: 'fade',
+        duration: 300,
+    });
 });
