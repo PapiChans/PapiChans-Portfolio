@@ -151,6 +151,11 @@ body {
     text-align: center;
 }
 
+/* Typography: Skills */
+.skills-paragraph {
+    font-size: clamp(13px, 2vw, 15px);
+}
+
 /* Navigation Bar */
 .navbar{
     z-index: 4;
@@ -541,6 +546,41 @@ body {
     margin-bottom: 15px;
 }
 
+ /* Skills Section */
+
+ .skills-area {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 10px;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(2, 2fr);
+ }
+
+ .skills-list-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--theme-bg);
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid var(--pallete-clr);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+ }
+
+ .skills-list-box:hover {
+    background-color: var(--theme-card-bg);
+ }
+
+ .skills-stars-area {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--pallete-clr);
+ }
+
 /*
 -----------------------------
 The Responsive Area
@@ -648,6 +688,15 @@ The Responsive Area
         align-items: center;
     }
 
+    /* Skills Section */
+
+    .skills-area {
+        margin-top: 10px;
+        display: grid;
+        column-gap: 1px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 /*Custom Responsive #1*/
@@ -665,6 +714,14 @@ The Responsive Area
     .profile-card-area {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* Skills Section */
+
+    .skills-stars-area {
+        margin-left: 5px;
+        margin-right: 5px;
+        color: var(--pallete-clr);
+     }
 }
 
 /* Extra small devices (phones, 600px and down) */

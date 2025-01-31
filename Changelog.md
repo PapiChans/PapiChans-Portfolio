@@ -100,11 +100,15 @@
 - Deleted White Background Pic due to it's unused and incompatible
 
 **v1.6.4**
-- January 28, 2025
+- January 29, 2025
 - Profile Feature Finished
 - Add AOS Library (Animate on Scroll)
 
 **v1.6.5**
-- January 28, 2025
+- January 30, 2025
 - Add Education on Profile Content
 - Add Experiences and Finished
+
+**v1.6.6**
+- January 31, 2025
+- Skills Section: Completed
