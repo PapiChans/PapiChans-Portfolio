@@ -112,3 +112,12 @@
 **v1.6.6**
 - January 31, 2025
 - Skills Section: Completed
+
+**v2.0.0**
+- February 1, 2025
+- Inprogress.html set as the default page
+- Renaming unused pages and assets
+- Projects and Blog Section Completed
+- Minor Revisions about grammers and error typos.
+- Add PreLoader
+- INTRODUCING: Porfolio 2.0
