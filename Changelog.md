@@ -121,3 +121,8 @@
 - Minor Revisions about grammers and error typos.
 - Add PreLoader
 - INTRODUCING: Porfolio 2.0
+
+**v2.0.1**
+- February 2, 2025
+- Minor Adjustments on Project Icons Style
+- Typo Error Fix
