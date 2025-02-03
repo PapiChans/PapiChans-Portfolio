@@ -126,3 +126,7 @@
 - February 2, 2025
 - Minor Adjustments on Project Icons Style
 - Typo Error Fix
+
+**v2.0.2**
+- February 3, 2025
+- Add Academic Experiences
