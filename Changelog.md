@@ -130,3 +130,7 @@
 **v2.0.2**
 - February 3, 2025
 - Add Academic Experiences
+
+**v2.0.2.1**
+- February 3, 2025
+- Very Minor Grammar Check
