@@ -134,3 +134,7 @@
 **v2.0.2.1**
 - February 3, 2025
 - Very Minor Grammar Check
+
+**v2.0.3**
+- February 4, 2025
+- Add a Small Project
