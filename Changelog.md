@@ -138,3 +138,7 @@
 **v2.0.3**
 - February 4, 2025
 - Add a Small Project
+
+**v2.0.4**
+- February 18, 2025
+- Add more Contents
