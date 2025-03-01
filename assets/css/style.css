@@ -178,6 +178,10 @@ body {
     font-weight: bold;
 } 
 
+.pallete-clr {
+    color: var(--pallete-clr);
+}
+
 /*Typography: Profile*/
 .profile-name {
     font-size: clamp(17px, 3vw, 100px);

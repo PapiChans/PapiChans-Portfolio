@@ -87,10 +87,10 @@
                         <p class="card-paragraph">I'm Christian. Graduated Student from Polytechnic University of the Philippines - Quezon City Campus from the course of Bachelor of Science in Information Technology. Graduated exactly October 18, 2024.</p>
                         <div class="profile-contacts">
                             <a href="https://ph.linkedin.com/in/christian-altiche-9b8065271" target="..blank">
-                                <div class="contact-box"><ion-icon name="logo-linkedin" size="large"></ion-icon></div>
+                                <div id="linkedin-button" class="contact-box"><ion-icon name="logo-linkedin" size="large"></ion-icon></div>
                             </a>
                             <a href="https://github.com/PapiChans" target="..blank">
-                                <div class="contact-box"><ion-icon name="logo-github" size="large"></ion-icon></div>
+                                <div id="github-button" class="contact-box"><ion-icon name="logo-github" size="large"></ion-icon></div>
                             </a>
                             <div class="contact-box" id="mail-button"><ion-icon name="mail-outline" size="large"></ion-icon></div>
                             <div class="contact-box" id="call-button"><ion-icon name="call-outline" size="large"></ion-icon></div>
@@ -702,7 +702,26 @@
                 </div>
             </section>
             <section class="card-content" id="projects-section" data-tab-content>
-                <h1 class="card-header-text">Projects</h1>
+                <h1 class="card-header-text">Current Projects</h1>
+                <div class="projects-area">
+                    <div class="projects-item">
+                        <div class="projects-logo-area">
+                            <img src="/PapiChans-Portfolio/assets/images/logo.png" alt="Project Logo" class="projects-logo">
+                        </div>
+                        <div class="project-flex-center">
+                            <h1 class="profile-card-header">Nothing...</h1>
+                        </div>
+                        <div class="project-flex-center">
+                            <p class="card-paragraph">Think about Next Project</p>
+                        </div>
+                        <p class="card-paragraph"><span class="fw-bold">Status: </span>Thinking</p>
+                        <p class="card-paragraph"><span class="fw-bold">Description: </span>???</p>
+                        <div class="project-item-footer">                            
+                            <p class="card-paragraph"><span class="fw-bold">Technologies: </span>???</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="card-header-text">Completed Projects</h1>
                 <div class="projects-area">
                     <div class="projects-item">
                         <div class="projects-logo-area">
@@ -714,27 +733,30 @@
                         <div class="project-flex-center">
                             <p class="card-paragraph">Personal Project</p>
                         </div>
-                        <p class="card-paragraph"><span class="fw-bold">Status: </span>In Progress (Jan. 2025 - Present)</p>
+                        <p class="card-paragraph"><span class="fw-bold">Status: </span>Completed (Jan. 2025 - Feb. 2025)</p>
                         <p class="card-paragraph"><span class="fw-bold">Description: </span>A Remastered Version of my Capstone Project, optimizing performance and removing unused features.</p>
                         <div class="project-item-footer">                            
                             <p class="card-paragraph"><span class="fw-bold">Technologies: </span>HTML, CSS, JavaScript, JQuery, Bootstrap, PHP, Laravel, PostgreSQL, AJAX</p>
                         </div>
                     </div>
                     <div class="projects-item">
-                        <div class="projects-logo-area">
-                            <img src="/PapiChans-Portfolio/assets/images/logo.png" alt="Project Logo" class="projects-logo">
-                        </div>
-                        <div class="project-flex-center">
-                            <h1 class="profile-card-header">Will you be my valentines - 2025</h1>
-                        </div>
-                        <div class="project-flex-center">
-                            <p class="card-paragraph">Personal Small Project</p>
-                        </div>
-                        <p class="card-paragraph"><span class="fw-bold">Status: </span>Completed (Feb. 3-4 2025)</p>
-                        <p class="card-paragraph"><span class="fw-bold">Description: </span>Just a "will you be my valentine" one page.</p>
-                        <div class="project-item-footer">                            
-                            <p class="card-paragraph"><span class="fw-bold">Technologies: </span>HTML, CSS, JavaScript</p>
-                        </div>
+                        <a href="https://papichans.github.io/will-u-be-my-valentines-2025/" target="..blank">
+                            <div class="projects-logo-area">
+                                <img src="/PapiChans-Portfolio/assets/images/logo.png" alt="Project Logo" class="projects-logo">
+                            </div>
+                            <div class="project-flex-center">
+                                <h1 class="profile-card-header">Will you be my valentines - 2025</h1>
+                            </div>
+                            <div class="project-flex-center">
+                                <p class="card-paragraph">Personal Small Project</p>
+                            </div>
+                            <p class="card-paragraph"><span class="fw-bold">Status: </span>Completed (Feb. 3-4 2025)</p>
+                            <p class="card-paragraph"><span class="fw-bold">Description: </span>Just a "will you be my valentine" one page.</p>
+                            <p class="card-paragraph pallete-clr">Click to view the Sample Page.</p>
+                            <div class="project-item-footer">                            
+                                <p class="card-paragraph"><span class="fw-bold">Technologies: </span>HTML, CSS, JavaScript</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="projects-item">
                         <a href="https://papichans.github.io/SideQuest-Portfolio/" target="..blank">
@@ -749,7 +771,7 @@
                             </div>
                             <p class="card-paragraph"><span class="fw-bold">Status: </span>Completed (December 15, 2024)</p>
                             <p class="card-paragraph"><span class="fw-bold">Description: </span>8-BIT Styled Portfolio for Showcasing more Personal Info and Skills.</p>
-                            <p class="card-paragraph">Click to view the Sample Page.</p>
+                            <p class="card-paragraph pallete-clr">Click to view the Sample Page.</p>
                             <div class="project-item-footer">                            
                                 <p class="card-paragraph"><span class="fw-bold">Technologies: </span>HTML, CSS, JavaScript</p>
                             </div>
@@ -784,7 +806,7 @@
                             </div>
                             <p class="card-paragraph"><span class="fw-bold">Status: </span>Completed (September, 2024 - October, 2024)</p>
                             <p class="card-paragraph"><span class="fw-bold">Description: </span>Sample Homepage for Anime Roshidere.</p>
-                            <p class="card-paragraph">Click to view the Sample Page.</p>
+                            <p class="card-paragraph pallete-clr">Click to view the Sample Page.</p>
                             <div class="project-item-footer">                            
                                 <p class="card-paragraph"><span class="fw-bold">Technologies: </span>HTML, CSS, JavaScript, Tailwind CSS</p>
                             </div>

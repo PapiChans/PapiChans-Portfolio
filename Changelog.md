@@ -142,3 +142,8 @@
 **v2.0.4**
 - February 18, 2025
 - Add more Contents
+
+**v2.0.5**
+- March 1, 2025
+- Add Tippy for Github and LinkedIn
+- Add: Projects Section separating from Current to Completed Projects

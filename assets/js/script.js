@@ -202,6 +202,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // -------------------------------
 
     // Get Phone Number Button and Gmail
+    tippy('#linkedin-button', {
+        content: "LinkedIn Profile",
+        placement: 'bottom',
+        arrow: true,
+        animation: 'fade',
+        duration: 300,
+    });
+
+    tippy('#github-button', {
+        content: "GitHub Profile",
+        placement: 'bottom',
+        arrow: true,
+        animation: 'fade',
+        duration: 300,
+    });
+
     tippy('#call-button', {
         content: "+63 929 635 2760",
         placement: 'bottom',
