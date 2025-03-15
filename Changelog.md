@@ -147,3 +147,9 @@
 - March 1, 2025
 - Add Tippy for Github and LinkedIn
 - Add: Projects Section separating from Current to Completed Projects
+
+**v2.0.6**
+- March 15, 2025
+- Add New Logo
+- Add: New Project Contents
+- Adjustment of content for responsive.
