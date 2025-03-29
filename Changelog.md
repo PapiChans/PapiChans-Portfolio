@@ -153,3 +153,8 @@
 - Add New Logo
 - Add: New Project Contents
 - Adjustment of content for responsive.
+
+**v2.0.7**
+- March 29, 2025
+- Add Content
+- Replace Ionicons Library
