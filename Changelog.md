@@ -158,3 +158,8 @@
 - March 29, 2025
 - Add Content
 - Replace Ionicons Library
+
+**v2.0.8**
+- March 31, 2025
+- Add Chisato icon
+- Update 'Experiences' and 'Projects' Content
