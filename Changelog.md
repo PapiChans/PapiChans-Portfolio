@@ -163,3 +163,7 @@
 - March 31, 2025
 - Add Chisato icon
 - Update 'Experiences' and 'Projects' Content
+
+**v2.0.9**
+- April 4, 2025
+- Revised the current Job Description and Position.
