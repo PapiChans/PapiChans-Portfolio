@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     tippy('#call-button', {
-        content: "+63 929 635 2760",
+        content: "+63 929 635 2760 (Phone and Viber)",
         placement: 'bottom',
         arrow: true,
         animation: 'fade',

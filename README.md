@@ -6,4 +6,4 @@
 | ------------------- | --------------------|
 | **Description**     | This is my Personal Portfolio Repository to showcase my IT Profile for my Career |
 | **Project Started**    | July 22, 2024 |
-| **Current Version** | v2.0.9 |
+| **Current Version** | v2.0.10 |

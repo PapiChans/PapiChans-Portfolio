@@ -167,3 +167,8 @@
 **v2.0.9**
 - April 4, 2025
 - Revised the current Job Description and Position.
+
+**v2.0.10**
+- April 19, 2025
+- Rename and Add Minor Contents
+- Change my Current Profile Picture
