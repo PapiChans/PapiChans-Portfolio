@@ -172,3 +172,7 @@
 - April 19, 2025
 - Rename and Add Minor Contents
 - Change my Current Profile Picture
+
+**v2.0.11**
+- July 3, 2025
+- Update 'Projects' Content
